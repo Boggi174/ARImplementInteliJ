@@ -1,7 +1,7 @@
 {
   materials: [
     {
-      name: 'Material.004',
+      name: 'Material.001',
       parameters: [
         {
           baseColor: null,
@@ -27,7 +27,7 @@
       source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
     },
     {
-      name: 'Material.005',
+      name: 'Material.002',
       parameters: [
         {
           baseColor: null,
@@ -53,7 +53,7 @@
       source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
     },
     {
-      name: 'Material.006',
+      name: 'Material.003',
       parameters: [
         {
           baseColor: null,
@@ -79,15 +79,15 @@
       source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
     },
     {
-      name: 'None.001',
+      name: 'None',
       parameters: [
         {
           baseColor: null,
         },
         {
           baseColorTint: [
-            0.0056340000000000001,
-            0.0060400000000000002,
+            0.80000000000000004,
+            0.80000000000000004,
             0.80000000000000004,
             1,
           ],
@@ -111,8 +111,8 @@
       'Orientation',
     ],
     collision: {},
-    file: 'sampledata/malefinal.obj',
-    name: 'malefinal',
+    file: 'sampledata/femalefinal.obj',
+    name: 'femalefinal',
     recenter: 'root',
   },
   version: '0.54:2',

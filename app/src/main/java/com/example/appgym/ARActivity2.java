@@ -1,12 +1,11 @@
 package com.example.appgym;
 
 import android.content.Intent;
-import android.os.Debug;
+import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import com.example.myapplication.R;
 import com.google.ar.core.Anchor;
 import com.google.ar.core.HitResult;
@@ -19,7 +18,7 @@ import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.BaseArFragment;
 import com.google.ar.sceneform.ux.TransformableNode;
 
-public class ARActivity extends AppCompatActivity {
+public class ARActivity2 extends AppCompatActivity {
 
     private ArFragment arFragment;
     private ModelRenderable modelRenderable;
@@ -27,7 +26,7 @@ public class ARActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ar);
+        setContentView(R.layout.activity2_ar);
 
         arFragment= (ArFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
 
@@ -130,11 +129,11 @@ public class ARActivity extends AppCompatActivity {
                 .build()
                 .thenAccept(renderable -> legs_button = renderable );
         ModelRenderable.builder()
-                .setSource(this, R.raw.malefinal)
+                .setSource(this, R.raw.femalefinal)
                 .build()
                 .thenAccept(renderable->modelRenderable = renderable)
                 .exceptionally(throwable -> {
-                    Toast.makeText(ARActivity.this, "Model can't be Loaded", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ARActivity2.this, "Model can't be Loaded", Toast.LENGTH_SHORT).show();
                     return null;
                 });
 

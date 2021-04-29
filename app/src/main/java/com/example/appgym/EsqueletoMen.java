@@ -1,6 +1,8 @@
 package com.example.appgym;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.myapplication.R;
@@ -21,5 +23,15 @@ public class EsqueletoMen extends AppCompatActivity {
             }
 
         }
+
+
+
     }
+
+    public void openArm(View view){
+        Intent intent = new Intent(this, ARActivity.class);
+        startActivity(intent);
+    }
+
+
 }

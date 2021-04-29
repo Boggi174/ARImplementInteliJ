@@ -22,6 +22,13 @@
         app:lottie_imageAssetsFolder="assets"
         app:lottie_loop="true"
         tools:ignore="MissingConstraints" />
+    <Button
+
+            android:layout_width="47dp"
+            android:layout_height="45dp" android:id="@+id/openarwbutton"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginEnd="16dp"
+            android:onClick="openArw" android:text="AR" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

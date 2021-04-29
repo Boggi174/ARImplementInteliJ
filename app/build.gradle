@@ -68,3 +68,9 @@ sceneform.asset('sampledata/malefinal.obj', // 'Source Asset Path' specified dur
         'default',                            // 'Material Path' specified during import.
         'sampledata/malefinal.sfa',         // '.sfa Output Path' specified during import.
         'src/main/res/raw/malefinal')              // '.sfb Output Path' specified during import.
+
+sceneform.asset('sampledata/femalefinal.obj', // 'Source Asset Path' specified during import.
+        'default',                            // 'Material Path' specified during import.
+        'sampledata/femalefinal.sfa',         // '.sfa Output Path' specified during import.
+        'src/main/res/raw/femalefinal')              // '.sfb Output Path' specified during import.
+

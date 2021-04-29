@@ -33,6 +33,8 @@
         <activity android:name="com.example.appgym.ARActivity" >
 
         </activity>
+        <activity android:name="com.example.appgym.ARActivity2" >
+        </activity>
         <activity
                 android:name="com.example.appgym.FullscreenActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
