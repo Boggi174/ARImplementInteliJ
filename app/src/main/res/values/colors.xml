@@ -2,5 +2,26 @@
   <resources>
       <color name="colorPrimary">#6200EE</color>
       <color name="colorPrimaryDark">#3700B3</color>
-      <color name="colorAccent">#03DAC5</color>
-  </resources>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorBackground">#E0E0E0</color>
+    <color name="colorTrenAccentStart">#00B09B</color>
+    <color name="colorTrenAccentEnd">#96C93D</color>
+    <color name="colorDivider">#D6D6D6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+
+    <!-- Este color es para la barra donde esta tu hora,nivel de bateria -->
+    <color name="purple_700">#8bc34a</color>
+
+    <!-- Este color es de la segunda barra/rectangulo  por debajo de la barra de notificaciones y a la vez el color del menú-->
+    <color name="purple_500">#9ccc95</color>
+
+</resources>

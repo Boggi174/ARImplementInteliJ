@@ -1,13 +1,14 @@
-package com.example.myapplication;
+package com.example.appgym;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.myapplication.R;
 
-public class BackActivity extends AppCompatActivity {
+public class LegsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_back);
+        setContentView(R.layout.activity_legs);
     }
 }

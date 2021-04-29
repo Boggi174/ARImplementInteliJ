@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.appgym;
 
 import android.content.Intent;
 import android.view.MotionEvent;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.myapplication.R;
 import com.google.ar.core.Anchor;
 import com.google.ar.core.HitResult;
 import com.google.ar.core.Plane;
@@ -17,7 +18,7 @@ import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.BaseArFragment;
 import com.google.ar.sceneform.ux.TransformableNode;
 
-public class MainActivity extends AppCompatActivity {
+public class ARActivity extends AppCompatActivity {
 
     private ArFragment arFragment;
     private ModelRenderable modelRenderable;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ar);
 
         arFragment= (ArFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
         setUpModel();
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                 .build()
                 .thenAccept(renderable->modelRenderable = renderable)
                 .exceptionally(throwable -> {
-                    Toast.makeText(MainActivity.this, "Model can't be Loaded", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ARActivity.this, "Model can't be Loaded", Toast.LENGTH_SHORT).show();
                     return null;
                 });
     }
