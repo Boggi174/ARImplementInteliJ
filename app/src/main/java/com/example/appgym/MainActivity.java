@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference myRef =  db.getReference("message");
         myRef.setValue("Hello, World!");
-        
+
     }
 
     @Override
