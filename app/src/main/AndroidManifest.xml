@@ -54,7 +54,7 @@
                 android:theme="@style/Theme.AppGym.Fullscreen"/>
         <activity
                 android:name="com.example.appgym.MainActivity"
-                android:theme="@style/Theme.AppGym.NoActionBar">
+                android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
