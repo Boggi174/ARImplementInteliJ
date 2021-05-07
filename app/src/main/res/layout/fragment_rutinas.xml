@@ -67,7 +67,7 @@
                     android:src="@drawable/pecho" />
 
                 <TextView
-                    android:id="@+id/label_pectorales"
+                    android:id="@+id/label_pectoral"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -91,14 +91,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
+                <ImageView android:id="@+id/img_abdomen"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
                     android:src="@drawable/abdomen"/>
-                <TextView
+                <TextView android:id="@+id/label_abdomen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -122,7 +122,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layoutPectorales">
 
-                <ImageView
+                <ImageView android:id="@+id/img_brazo"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
@@ -130,7 +130,7 @@
                     android:padding="8dp"
                     android:src="@drawable/brazo"/>
 
-                <TextView
+                <TextView android:id="@+id/label_brazo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -154,14 +154,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layoutAbdomen">
 
-                <ImageView
+                <ImageView android:id="@+id/img_espalda"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
                     android:src="@drawable/espalda"/>
-                <TextView
+                <TextView android:id="@+id/label_espalda"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -185,19 +185,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layoutBrazo">
 
-                <ImageView
+                <ImageView android:id="@+id/img_pierna"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/hombro"/>
+                    android:src="@drawable/pierna"/>
 
-                <TextView
+                <TextView android:id="@+id/label_pierna"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Hombro"
+                    android:text="Pierna"
                     android:textColor="@color/colorAccent"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -217,14 +217,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layoutEspalda">
 
-                <ImageView
+                <ImageView android:id="@+id/img_gluteo"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
                     android:src="@drawable/gluteo"/>
-                <TextView
+                <TextView android:id="@+id/label_gluteo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"

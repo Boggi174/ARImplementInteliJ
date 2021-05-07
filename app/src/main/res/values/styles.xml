@@ -2,8 +2,12 @@
   <!-- Base application theme. -->
   <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
       <!-- Customize your theme here. -->
-      <item name="colorPrimary">@color/colorPrimary</item>
-      <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+      <!-- Este color es para la barra donde esta tu hora,nivel de bateria -->
+      <item name="colorPrimary">@color/purple_500</item>
+      <!-- Este color es de la segunda barra/rectangulo  por debajo de la barra de notificaciones y a la vez el color del menú-->
+
+      <item name="colorPrimaryDark">@color/purple_700</item>
+
       <item name="colorAccent">@color/colorAccent</item>
   </style>
     <style name="Widget.Theme.AppGym.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">

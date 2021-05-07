@@ -18,10 +18,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_200">#FFBB86FC</color>
 
-    <!-- Este color es para la barra donde esta tu hora,nivel de bateria -->
+
+  <!-- Este color es para la barra donde esta tu hora,nivel de bateria -->
+  <color name="purple_500">#9ccc95</color>
+  <!-- Este color es de la segunda barra/rectangulo  por debajo de la barra de notificaciones y a la vez el color del menú-->
     <color name="purple_700">#8bc34a</color>
 
-    <!-- Este color es de la segunda barra/rectangulo  por debajo de la barra de notificaciones y a la vez el color del menú-->
-    <color name="purple_500">#9ccc95</color>
+
 
 </resources>

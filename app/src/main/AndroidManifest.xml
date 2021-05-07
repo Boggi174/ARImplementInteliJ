@@ -1,61 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication" >
+          package="com.example.myapplication">
     <!-- Both "AR Optional" and "AR Required" apps require CAMERA permission. -->
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!-- Sceneform requires OpenGL ES 3.0 or later. -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission
+            android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- Sceneform requires OpenGL ES 3.0 or later. -->
     <uses-feature
-        android:glEsVersion="0x00030000"
-        android:required="true" />
+            android:glEsVersion="0x00030000"
+            android:required="true"/>
     <!--
  Indicates that app requires ARCore ("AR Required"). Ensures the app is
          visible only in the Google Play Store on devices that support ARCore.
          For "AR Optional" apps remove this line.
     -->
-    <uses-feature android:name="android.hardware.camera.ar" />
+    <uses-feature android:name="android.hardware.camera.ar"/>
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name="com.example.appgym.BackActivity" >
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name="com.example.appgym.Main_Recyclerview_brazo">
         </activity>
-        <activity android:name="com.example.appgym.LegsActivity" >
+        <activity android:name="com.example.appgym.Main_Recyclerview_gluteo">
         </activity>
-        <activity android:name="com.example.appgym.ArmsActivity" >
+        <activity android:name="com.example.appgym.Main_Recyclerview_pierna">
         </activity>
-        <activity android:name="com.example.appgym.ChestActivity" >
+        <activity android:name="com.example.appgym.Main_Recyclerview_abdomen">
         </activity>
-        <activity android:name="com.example.appgym.ARActivity" >
-
+        <activity android:name="com.example.appgym.Main_Recyclerview_espalda">
         </activity>
-        <activity android:name="com.example.appgym.ARActivity2" >
+        <activity android:name="com.example.appgym.Main_Recyclerview_pectoral">
+        </activity>
+        <activity android:name="com.example.appgym.BackActivity">
+        </activity>
+        <activity android:name="com.example.appgym.LegsActivity">
+        </activity>
+        <activity android:name="com.example.appgym.ArmsActivity">
+        </activity>
+        <activity android:name="com.example.appgym.ChestActivity">
+        </activity>
+        <activity android:name="com.example.appgym.ARActivity">
+        </activity>
+        <activity android:name="com.example.appgym.ARActivity2">
         </activity>
         <activity
                 android:name="com.example.appgym.FullscreenActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:label="@string/title_activity_fullscreen"
-                android:theme="@style/Theme.AppGym.Fullscreen"></activity>
+                android:theme="@style/Theme.AppGym.Fullscreen"/>
         <activity
                 android:name="com.example.appgym.MainActivity"
                 android:theme="@style/Theme.AppGym.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.example.appgym.Rutina_pectorales" />
         <activity
                 android:name="com.example.appgym.EsqueletoWoman"
-                android:label="Mujer 3D" />
+                android:label="Mujer 3D"/>
         <activity
                 android:name="com.example.appgym.EsqueletoMen"
-                android:label="Hombre 3D" />
+                android:label="Hombre 3D"/>
         <!--
  Indicates that app requires ARCore ("AR Required"). Causes the Google
      Play Store to download and install Google Play Services for AR along
@@ -63,8 +74,8 @@
      "required".
         -->
         <meta-data
-            android:name="com.google.ar.core"
-            android:value="optional" />
+                android:name="com.google.ar.core"
+                android:value="optional"/>
     </application>
 
 </manifest>
