@@ -35,14 +35,6 @@
         </activity>
         <activity android:name="com.example.appgym.Main_Recyclerview_pectoral">
         </activity>
-        <activity android:name="com.example.appgym.BackActivity">
-        </activity>
-        <activity android:name="com.example.appgym.LegsActivity">
-        </activity>
-        <activity android:name="com.example.appgym.ArmsActivity">
-        </activity>
-        <activity android:name="com.example.appgym.ChestActivity">
-        </activity>
         <activity android:name="com.example.appgym.ARActivity">
         </activity>
         <activity android:name="com.example.appgym.ARActivity2">

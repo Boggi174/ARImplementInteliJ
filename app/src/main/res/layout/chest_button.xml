@@ -4,7 +4,10 @@
         android:id="@+id/chestButton"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_height="wrap_content" style="@style/Widget.AppCompat.Button.Small" android:onClick="openChest"
-        android:backgroundTint="@color/colorAccent" android:scaleX=".1" android:scaleY=".1" android:text="C">
+        android:layout_height="wrap_content" style="@style/Widget.AppCompat.Button.Small"
+        android:onClick="openChest"
+        android:scaleY=".3" android:text="C"
+
+        android:foreground="@drawable/common_google_signin_btn_icon_dark_normal_background" android:scaleX=".3">
 
 </Button>

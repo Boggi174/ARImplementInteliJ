@@ -4,9 +4,9 @@
         android:id="@+id/legsButton"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_height="wrap_content" style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:onClick="openLegs"
-        android:scaleX=".3" android:scaleY=".3" android:text="L"
+        android:layout_height="wrap_content" style="@style/Widget.AppCompat.Button.Small"
+        android:onClick="openGlut"
+        android:scaleX=".3" android:scaleY=".3" android:text="G"
         android:foreground="@drawable/common_google_signin_btn_icon_dark_normal_background">
 
 </Button>

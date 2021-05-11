@@ -64,6 +64,7 @@ public class ARActivity2 extends AppCompatActivity {
     ViewRenderable arms_button;
     ViewRenderable back_button;
     ViewRenderable legs_button;
+    ViewRenderable glut_button;
 
     // Asignacion de partes interactuables
     private void addParts(AnchorNode anchorNode, TransformableNode node, String name){
@@ -75,7 +76,7 @@ public class ARActivity2 extends AppCompatActivity {
         /** Agrega Pecho **/
         TransformableNode nameView = new TransformableNode(arFragment.getTransformationSystem());
         // Esta linea permite mover la ubicacion de la generacion del clikcable
-        nameView.setLocalPosition(new Vector3(node.getLocalPosition().x+0.0f, node.getLocalPosition().y +0.25f,node.getLocalPosition().z+0.04f));
+        nameView.setLocalPosition(new Vector3(node.getLocalPosition().x+0.0f, node.getLocalPosition().y +0.65f,node.getLocalPosition().z+0.1f));
         nameView.setParent(anchorNode);
         nameView.setRenderable(chest_button);
         nameView.select();
@@ -83,7 +84,7 @@ public class ARActivity2 extends AppCompatActivity {
         /** Agrega Brazos **/
         TransformableNode nameView2 = new TransformableNode(arFragment.getTransformationSystem());
         // Esta linea permite mover la ubicacion de la generacion del clikcable
-        nameView2.setLocalPosition(new Vector3(node.getLocalPosition().x+0.055f, node.getLocalPosition().y +0.25f,node.getLocalPosition().z+0.012f));
+        nameView2.setLocalPosition(new Vector3(node.getLocalPosition().x+0.12f, node.getLocalPosition().y +0.55f,node.getLocalPosition().z+0.1f));
         nameView2.setParent(anchorNode);
         nameView2.setRenderable(arms_button);
         nameView2.select();
@@ -91,7 +92,7 @@ public class ARActivity2 extends AppCompatActivity {
         /** Agrega Piernas **/
         TransformableNode nameView3 = new TransformableNode(arFragment.getTransformationSystem());
         // Esta linea permite mover la ubicacion de la generacion del clikcable
-        nameView3.setLocalPosition(new Vector3(node.getLocalPosition().x+0.035f, node.getLocalPosition().y +0.05f,node.getLocalPosition().z+0.015f));
+        nameView3.setLocalPosition(new Vector3(node.getLocalPosition().x+0.08f, node.getLocalPosition().y +0.08f,node.getLocalPosition().z+0.1f));
         nameView3.setParent(anchorNode);
         nameView3.setRenderable(legs_button);
         nameView3.select();
@@ -99,10 +100,18 @@ public class ARActivity2 extends AppCompatActivity {
         /** Agrega Espalda **/
         TransformableNode nameView4 = new TransformableNode(arFragment.getTransformationSystem());
         // Esta linea permite mover la ubicacion de la generacion del clikcable
-        nameView4.setLocalPosition(new Vector3(node.getLocalPosition().x+0.0f, node.getLocalPosition().y +0.25f,node.getLocalPosition().z-0.04f));
+        nameView4.setLocalPosition(new Vector3(node.getLocalPosition().x+0.0f, node.getLocalPosition().y +0.65f,node.getLocalPosition().z-0.1f));
         nameView4.setParent(anchorNode);
         nameView4.setRenderable(back_button);
         nameView4.select();
+
+        /** Agrega Gluteo**/
+        TransformableNode nameView5 = new TransformableNode(arFragment.getTransformationSystem());
+        // Esta linea permite mover la ubicacion de la generacion del clikcable
+        nameView5.setLocalPosition(new Vector3(node.getLocalPosition().x+0.0f, node.getLocalPosition().y +0.4f,node.getLocalPosition().z-0.1f));
+        nameView5.setParent(anchorNode);
+        nameView5.setRenderable(glut_button);
+        nameView5.select();
 
     }
 
@@ -128,6 +137,11 @@ public class ARActivity2 extends AppCompatActivity {
                 .setView(this, R.layout.legs_button)
                 .build()
                 .thenAccept(renderable -> legs_button = renderable );
+
+        ViewRenderable.builder()
+                .setView(this, R.layout.gluteus_button)
+                .build()
+                .thenAccept(renderable -> glut_button = renderable );
         ModelRenderable.builder()
                 .setSource(this, R.raw.femalefinal)
                 .build()
@@ -143,23 +157,29 @@ public class ARActivity2 extends AppCompatActivity {
 
 
     public void openChest(View view){
-        Intent intent = new Intent(this, ChestActivity.class);
+        Intent intent = new Intent(this, Main_Recyclerview_pectoral.class);
         startActivity(intent);
     }
 
     public void openLegs(View view){
-        Intent intent = new Intent(this, LegsActivity.class);
+        Intent intent = new Intent(this, Main_Recyclerview_pierna.class);
         startActivity(intent);
     }
 
     public void openBack(View view){
-        Intent intent = new Intent(this, BackActivity.class);
+        Intent intent = new Intent(this, Main_Recyclerview_espalda.class);
         startActivity(intent);
     }
 
     public void openArms(View view){
-        Intent intent = new Intent(this, ArmsActivity.class);
+        Intent intent = new Intent(this, Main_Recyclerview_brazo.class);
         startActivity(intent);
+    }
+
+    public void openGlut(View view){
+        Intent intent = new Intent(this,Main_Recyclerview_gluteo.class);
+        startActivity(intent);
+
     }
 
 
