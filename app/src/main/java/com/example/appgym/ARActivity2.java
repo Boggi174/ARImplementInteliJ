@@ -65,6 +65,7 @@ public class ARActivity2 extends AppCompatActivity {
     ViewRenderable back_button;
     ViewRenderable legs_button;
     ViewRenderable glut_button;
+    ViewRenderable abs_button;
 
     // Asignacion de partes interactuables
     private void addParts(AnchorNode anchorNode, TransformableNode node, String name){
@@ -113,6 +114,15 @@ public class ARActivity2 extends AppCompatActivity {
         nameView5.setRenderable(glut_button);
         nameView5.select();
 
+
+        /** Agrega Abs**/
+        TransformableNode nameView6 = new TransformableNode(arFragment.getTransformationSystem());
+        // Esta linea permite mover la ubicacion de la generacion del clikcable
+        nameView6.setLocalPosition(new Vector3(node.getLocalPosition().x+0.0f, node.getLocalPosition().y +0.43f,node.getLocalPosition().z+0.10f));
+        nameView6.setParent(anchorNode);
+        nameView6.setRenderable(abs_button);
+        nameView6.select();
+
     }
 
     // Se hace un setup del modelo que se va a utilizar
@@ -142,6 +152,10 @@ public class ARActivity2 extends AppCompatActivity {
                 .setView(this, R.layout.gluteus_button)
                 .build()
                 .thenAccept(renderable -> glut_button = renderable );
+        ViewRenderable.builder()
+                .setView(this, R.layout.abs_button)
+                .build()
+                .thenAccept(renderable -> abs_button = renderable );
         ModelRenderable.builder()
                 .setSource(this, R.raw.femalefinal)
                 .build()
@@ -181,6 +195,12 @@ public class ARActivity2 extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void openAbs(View view){
+        Intent intent = new Intent(this,Main_Recyclerview_abdomen.class);
+        startActivity(intent);
+    }
+
 
 
 }
